@@ -30,6 +30,9 @@
         <th>
             @Html.DisplayNameFor(model => model.Pages)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
         <th></th>
     </tr>
 
@@ -55,7 +58,10 @@
                 @Html.DisplayFor(modelItem => item.Pages)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Id }) |
 
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>

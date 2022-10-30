@@ -33,7 +33,7 @@ namespace FinalExam.Controllers
             }
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
             return View();
         }
