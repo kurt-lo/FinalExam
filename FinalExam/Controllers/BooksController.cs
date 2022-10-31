@@ -13,8 +13,10 @@ namespace FinalExam.Controllers
         //firebase realtime database authentication
         IFirebaseConfig conf = new FirebaseConfig
         {
-            AuthSecret = "adUN3i0obYxt8s4XqeDnSLCGZYBVNBCNv1yQP8OB",
-            BasePath = "https://finalexam-c6528-default-rtdb.firebaseio.com"
+            AuthSecret = "XkmEmJK6PXPD5fV9kHAkTQYJwlGxzf0TjCRd6470",
+            BasePath = "https://cloud2-3d44a-default-rtdb.firebaseio.com/"
+            /*AuthSecret = "adUN3i0obYxt8s4XqeDnSLCGZYBVNBCNv1yQP8OB",
+            BasePath = "https://finalexam-c6528-default-rtdb.firebaseio.com"*/
         };
         IFirebaseClient client;
 
@@ -55,7 +57,7 @@ namespace FinalExam.Controllers
 
                 if (setResponse.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    ModelState.AddModelError(string.Empty, "Book addedd sucessfully");
+                    ModelState.AddModelError(string.Empty, "Book added sucessfully");
                 }
 
                 else
